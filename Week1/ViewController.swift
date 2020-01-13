@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var messageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func buttonLabel(_ sender: UIButton) {
+        messageLabel.text = "The Earth is flat"
+        messageLabel.textColor = UIColor.systemPink
+    }
 }
 
